@@ -1,0 +1,14 @@
+Instrucciones: 
+
+01.- Extraer todas las direcciones IP de los clientes que realizaron solicitudes al servidor.
+02.- Contar cuántas solicitudes se realizaron con cada método HTTP (GET, POST, etc.).
+03.- Encontrar todas las URLs que devolvieron un código de estado de respuesta 404 (página no encontrada).
+04.- Analizar el tamaño medio de las respuestas del servidor.
+05.- Identificar las solicitudes que se realizaron a recursos específicos (por ejemplo, todas las solicitudes a archivos de imagen, archivos CSS, archivos JavaScript, etc.).
+06.- Buscar todas las solicitudes que contienen parámetros de consulta adicionales en la URL.
+07.- Detectar solicitudes que se realizaron desde una determinada dirección IP o rango de direcciones IP.
+08.- Encontrar todas las solicitudes que utilizaron un protocolo HTTP específico (por ejemplo, HTTP/1.0).
+09.- Identificar solicitudes que devolvieron un código de estado de respuesta de error del servidor (por ejemplo, 500, 503, etc.).
+10.- Buscar todas las solicitudes que utilizaron un método HTTP específico para acceder a recursos específicos (por ejemplo, todas las solicitudes POST a formularios de inicio de sesión)
+
+.
