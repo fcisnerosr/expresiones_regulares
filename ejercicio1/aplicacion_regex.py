@@ -129,20 +129,39 @@
 # Punto 9
 # Identificar solicitudes que devolvieron un código 
 # de estado de respuesta del error del servidor (por ejemplo, 500, 503, etc)
+# import os; import re
+# os.system('clear')
+
+# pattern1 = re.compile(r'(\s)(\d{3,3})')
+# pattern2 = re.compile(r'\s/(\w*.[\w=?&.]*)')
+
+
+# with open('./log.csv') as f:
+#     for line in f:
+#         res1 = re.search(pattern1, line)
+        
+#         if res1:
+#             # print(res1.group(2))
+#             if res1.group(2) == '404':
+#                 res2 = re.search(pattern2, line)
+#                 if res2:
+#                     print(res2.group())
+
+# Punto 10
+# Buscar solicitudes con método HTTP espefício, tanto para POST y para GET
 import os; import re
 os.system('clear')
 
-pattern1 = re.compile(r'(\s)(\d{3,3})')
-pattern2 = re.compile(r'\s/(\w*.[\w=?&.]*)')
+pattern1 = re.compile(r'GET')
+pattern2 = re.compile(r'POST')
+patt_sol = re.compile(r'(\s/)([\w.\d/=?&]*)')
 
-
-with open('./log.csv') as f:
+with open('./log.csv', 'r') as f:
+    print("GET: ")
     for line in f:
         res1 = re.search(pattern1, line)
-        
+        soli = re.search(patt_sol, line)
         if res1:
-            # print(res1.group(2))
-            if res1.group(2) == '404':
-                res2 = re.search(pattern2, line)
-                if res2:
-                    print(res2.group())
+            if res1.group() == 'GET':
+                print(soli.group(2))
+                
