@@ -124,3 +124,25 @@
 #         if res2:
 #             if res2.group() == 'HTTP/1.0':
 #                 print(res.group(2))
+
+
+# Punto 9
+# Identificar solicitudes que devolvieron un código 
+# de estado de respuesta del error del servidor (por ejemplo, 500, 503, etc)
+import os; import re
+os.system('clear')
+
+pattern1 = re.compile(r'(\s)(\d{3,3})')
+pattern2 = re.compile(r'\s/(\w*.[\w=?&.]*)')
+
+
+with open('./log.csv') as f:
+    for line in f:
+        res1 = re.search(pattern1, line)
+        
+        if res1:
+            # print(res1.group(2))
+            if res1.group(2) == '404':
+                res2 = re.search(pattern2, line)
+                if res2:
+                    print(res2.group())
