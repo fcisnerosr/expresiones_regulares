@@ -1,0 +1,5 @@
+2023-05-14, Team A vs Team B, Friendly, 3-2
+2023-06-21, Team C vs Team D, Tournament, 1-1
+2023-07-04, Team E vs Team F, Friendly, 0-0
+2023-08-18, Team G vs Team H, Friendly, 2-3
+

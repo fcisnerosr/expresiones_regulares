@@ -1,0 +1,8 @@
+Se tiene un archivo de texto llamado data.txt que contiene registros de eventos deportivos. Cada línea del archivo tiene la siguiente estructura:
+
+2023-05-14, Team A vs Team B, Friendly, 3-2
+2023-06-21, Team C vs Team D, Tournament, 1-1
+2023-07-04, Team E vs Team F, Friendly, 0-0
+2023-08-18, Team G vs Team H, Friendly, 1-3
+
+Tu tarea es extraer todos los puntajes (scores) de los partidos que fueron "Friendly" utilizando expresiones regulares con el método re.findall().
