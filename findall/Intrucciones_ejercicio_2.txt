@@ -1,0 +1,10 @@
+Enunciado
+Tienes un archivo de texto llamado emails.txt que contiene una lista de correos electrónicos mezclados con otros textos.
+Cada línea del archivo puede contener múltiples correos electrónicos, así como otros datos no relacionados. 
+Tu tarea es extraer todas las direcciones de correo electrónico válidas del archivo utilizando expresiones regulares con el método re.findall().
+
+Hola, mi correo es juan.perez@example.com y el de mi colega es ana.lopez@example.net. Contacta con nosotros.
+Puedes encontrar más información en el sitio web.
+Otro contacto es contacto@empresa.com.
+Para soporte, escribe a support@empresa.org o help@empresa.org.
+Mi correo alternativo es juan_alt123@example.com.
